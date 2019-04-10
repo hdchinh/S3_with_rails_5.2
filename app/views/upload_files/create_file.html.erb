@@ -1,0 +1,6 @@
+<%= form_for @upload_file, url: upload_files_path, multipart: true do |f| %>
+  <label>Select upload file</label>
+  <%= f.file_field :filename %>
+  <br>
+  <%= f.submit 'Upload' %>
+<% end %>
